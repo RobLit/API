@@ -48,6 +48,26 @@
 				},
 				{
 					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "848f254d-bafd-4629-9bfd-a16d8505820f",
+								"exec": [
+									"//console.log(pm.request)\r",
+									"console.log(responseBody)\r",
+									"\r",
+									"pm.test(\"Test body\", function() {\r",
+									"    const responseBody = pm.response.json();\r",
+									"    pm.expect(responseBody.type).to.eql(\"Planet\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "adb3e5b3-886c-4aec-916f-2a3646e21b3d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
