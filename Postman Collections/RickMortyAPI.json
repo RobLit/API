@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "8537cddc-06a2-47b8-8e8d-b49eabe2c7bc"
+		},
+		{
 			"name": "Character15",
 			"event": [
 				{
