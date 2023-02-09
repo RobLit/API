@@ -133,7 +133,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://rickandmortyapi.com/api/"
+						"url": "https://rickandmortyapi.com/api/episode"
 					},
 					"response": []
 				}
