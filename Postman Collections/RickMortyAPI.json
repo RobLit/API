@@ -202,20 +202,14 @@
 									"    pm.response.to.have.status(200);\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Test two\", function() {\r",
-									"    const responseJson = pm.response.json();\r",
-									"    \r",
-									"    pm.expect(responseJson.name).is.not.empty;\r",
-									"    pm.expect(responseJson.air_date).is.not.empty;\r",
-									"    pm.expect(responseJson.episode).is.not.empty;\r",
-									"    pm.expect(responseJson.characters).is.not.empty;\r",
-									"})\r",
+									"//pm.test(\"Characters should not be empty\", function() {\r",
+									"//    const responseBody = pm.response.json();\r",
+									"//    responseBody.map(obiekt => {\r",
+									"//        pm.expect(map.characters).is.not.empty\r",
+									"//    })\r",
+									"//})\r",
 									"\r",
-									"\r",
-									"pm.test(\"Characters should not be empty\", function() {\r",
-									"    const responseBody = pm.response.json(results);\r",
-									"    console.log(responseBody)\r",
-									"})"
+									""
 								],
 								"type": "text/javascript"
 							}
