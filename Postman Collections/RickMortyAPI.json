@@ -132,7 +132,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/"
 					},
 					"response": []
 				}
