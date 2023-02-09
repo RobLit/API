@@ -139,13 +139,48 @@
 				},
 				{
 					"name": "New Request2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d9a7f803-7df2-47cb-973f-c23439c7d4fd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "77aa0552-5e25-4b3e-933f-fc9a60cdbc7a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location?dimension=Dimension C-137",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location"
+							],
+							"query": [
+								{
+									"key": "dimension",
+									"value": "Dimension C-137",
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				}
