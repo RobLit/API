@@ -126,6 +126,28 @@
 			"item": [
 				{
 					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f7633c73-9529-4b7b-8aaf-dfa253ccae09",
+								"exec": [
+									"pm.test(\"Status code 200\", function() {\r",
+									"    pm.response.to.have.status(200);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Characters not empty\", function () {\r",
+									"    const characters = pm.response.json();\r",
+									"    response.map(obj)\r",
+									"        pm.expect(obj.characters).to.have(\"https:\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "52fb3bee-8b92-4146-9888-3caca3074a49",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -133,7 +155,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://rickandmortyapi.com/api/episode"
+						"url": "https://rickandmortyapi.com/api/episode/15"
 					},
 					"response": []
 				}
