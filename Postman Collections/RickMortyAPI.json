@@ -212,7 +212,10 @@
 									"})\r",
 									"\r",
 									"\r",
-									""
+									"pm.test(\"Characters should not be empty\", function() {\r",
+									"    const responseBody = pm.response.json(results);\r",
+									"    console.log(responseBody)\r",
+									"})"
 								],
 								"type": "text/javascript"
 							}
