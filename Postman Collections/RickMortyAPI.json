@@ -160,14 +160,46 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Data type tests",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c2f4088a-127d-4e60-a9c1-0a55d975aa28",
+								"exec": [
+									"const body = pm.response.json();\r",
+									"pm.test(\"Data type should be object\", function() {\r",
+									"    pm.expect(body).to.be.an(\"object\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Data type id should be a number\", function() {\r",
+									"        pm.expect(body.id).to.be.a(\"number\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Data type name should be a string\", function() {\r",
+									"    pm.expect(body.name).to.be.a(\"string\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Data type characters should be an array\", function() {\r",
+									"    pm.expect(body.characters).to.be.an(\"array\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Data type air_date should not be empty\", function() {\r",
+									"    pm.expect(body.air_date).to.be.not.empty;\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "d97f6eca-90e0-40f0-b254-dd1f8f0d22e1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/episode/41"
 					},
 					"response": []
 				}
