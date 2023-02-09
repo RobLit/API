@@ -7,77 +7,83 @@
 	"item": [
 		{
 			"name": "Characters",
-			"item": [],
+			"item": [
+				{
+					"name": "Character15",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fc2e5168-e6e1-45d3-a7c0-84a50391e9b5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Status is unknown\", function() {\r",
+									"    pm.expect(response.status).to.eql(\"unknown\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Url not empty\", function() {\r",
+									"    pm.expect(response.url).is.not.empty;\r",
+									"})\r",
+									"\r",
+									"pm.collectionVariables.unset(\"variable_key\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "76ad3f91-0652-427b-8f71-7f9d00331913",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/character/15"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "adb3e5b3-886c-4aec-916f-2a3646e21b3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character?type=Planet",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "Planet"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "8537cddc-06a2-47b8-8e8d-b49eabe2c7bc"
 		},
 		{
-			"name": "Character15",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "fc2e5168-e6e1-45d3-a7c0-84a50391e9b5",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"\r",
-							"pm.test(\"Status is unknown\", function() {\r",
-							"    pm.expect(response.status).to.eql(\"unknown\");\r",
-							"})\r",
-							"\r",
-							"pm.test(\"Url not empty\", function() {\r",
-							"    pm.expect(response.url).is.not.empty;\r",
-							"})\r",
-							"\r",
-							"pm.collectionVariables.unset(\"variable_key\");"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "76ad3f91-0652-427b-8f71-7f9d00331913",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "https://rickandmortyapi.com/api/character/15"
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "adb3e5b3-886c-4aec-916f-2a3646e21b3d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://rickandmortyapi.com/api/character?type=Planet",
-					"protocol": "https",
-					"host": [
-						"rickandmortyapi",
-						"com"
-					],
-					"path": [
-						"api",
-						"character"
-					],
-					"query": [
-						{
-							"key": "type",
-							"value": "Planet"
-						}
-					]
-				}
-			},
-			"response": []
+			"name": "New Folder",
+			"item": [],
+			"id": "c7872847-1152-45f5-8fb1-abedcff42a31"
 		},
 		{
 			"name": "New Request",
