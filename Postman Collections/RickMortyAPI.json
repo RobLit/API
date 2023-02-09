@@ -115,7 +115,7 @@
 									"    pm.expect(responseBody.residents).is.not.eql(\"null\")\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Dimension is null\", function() {\r",
+									"pm.test(\"Dimension is unknown\", function() {\r",
 									"    const responseBody = pm.response.json();\r",
 									"    pm.expect(responseBody.dimension).is.eql(\"unknown\")\r",
 									"})\r",
