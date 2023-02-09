@@ -256,7 +256,9 @@
 									"\r",
 									"pm.test(\"Data type air_date should not be empty\", function() {\r",
 									"    pm.expect(body.air_date).to.be.not.empty;\r",
-									"})"
+									"})\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
