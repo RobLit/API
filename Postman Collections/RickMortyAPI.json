@@ -204,11 +204,13 @@
 									"\r",
 									"pm.test(\"Test two\", function() {\r",
 									"    const responseJson = pm.response.json();\r",
+									"    \r",
 									"    pm.expect(responseJson.name).is.not.empty;\r",
 									"    pm.expect(responseJson.air_date).is.not.empty;\r",
 									"    pm.expect(responseJson.episode).is.not.empty;\r",
 									"    pm.expect(responseJson.characters).is.not.empty;\r",
 									"})\r",
+									"\r",
 									"\r",
 									""
 								],
