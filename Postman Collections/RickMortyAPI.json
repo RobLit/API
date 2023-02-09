@@ -29,8 +29,7 @@
 									"pm.test(\"Url not empty\", function() {\r",
 									"    pm.expect(response.url).is.not.empty;\r",
 									"})\r",
-									"\r",
-									"pm.collectionVariables.unset(\"variable_key\");"
+									""
 								],
 								"type": "text/javascript"
 							}
