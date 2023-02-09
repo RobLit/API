@@ -54,7 +54,6 @@
 							"script": {
 								"id": "848f254d-bafd-4629-9bfd-a16d8505820f",
 								"exec": [
-									"//console.log(pm.request)\r",
 									"console.log(responseBody)\r",
 									"\r",
 									"pm.test(\"Test body\", function() {\r",
