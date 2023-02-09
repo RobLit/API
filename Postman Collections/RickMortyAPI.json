@@ -136,12 +136,6 @@
 									"    pm.response.to.have.status(200);\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Characters not empty\", function () {\r",
-									"    const characters = pm.response.json();\r",
-									"    response.map(obj)\r",
-									"        pm.expect(obj.characters).to.have(\"https:\")\r",
-									"})\r",
-									"\r",
 									""
 								],
 								"type": "text/javascript"
