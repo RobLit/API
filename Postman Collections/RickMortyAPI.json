@@ -85,13 +85,36 @@
 			"item": [
 				{
 					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5bba92ef-acea-4223-926f-282e70fafa87",
+								"exec": [
+									"pm.test(\"Residents is not null\", function () {\r",
+									"    const responseBody = pm.response.json();\r",
+									"    pm.expect(responseBody.residents).is.not.eql(\"null\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Dimension is null\", function() {\r",
+									"    const responseBody = pm.response.json();\r",
+									"    pm.expect(responseBody.dimension).is.eql(\"unknown\")\r",
+									"})\r",
+									"\r",
+									" "
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "cbd2bebf-f0a6-43ec-b56a-8d866aceb5e6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/location/13"
 					},
 					"response": []
 				}
