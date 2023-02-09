@@ -86,6 +86,11 @@
 			"id": "c7872847-1152-45f5-8fb1-abedcff42a31"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "9b843142-4526-4eea-9fb1-2b4ecc459b98"
+		},
+		{
 			"name": "New Request",
 			"id": "cbd2bebf-f0a6-43ec-b56a-8d866aceb5e6",
 			"protocolProfileBehavior": {
