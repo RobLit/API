@@ -149,7 +149,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request2",
+					"name": "Dimension C-137",
 					"event": [
 						{
 							"listen": "test",
@@ -160,7 +160,10 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									""
+									"pm.test(\"Response should be an array\", function() {\r",
+									"    response = pm.response.json();\r",
+									"    pm.expect(response.results).to.an('array');\r",
+									"})"
 								],
 								"type": "text/javascript"
 							}
@@ -187,8 +190,7 @@
 							"query": [
 								{
 									"key": "dimension",
-									"value": "Dimension C-137",
-									"type": "text"
+									"value": "Dimension C-137"
 								}
 							]
 						}
