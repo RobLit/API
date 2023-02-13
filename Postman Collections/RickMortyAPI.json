@@ -152,7 +152,36 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character?species=Animal&status=Alive&gender=Female",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character"
+							],
+							"query": [
+								{
+									"key": "species",
+									"value": "Animal",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Alive",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Female",
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				}
