@@ -145,7 +145,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Animals",
 					"id": "b58d4af3-7ad6-453e-8e41-5796219f4c31",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
