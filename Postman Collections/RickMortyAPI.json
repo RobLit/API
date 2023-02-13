@@ -54,14 +54,16 @@
 							"script": {
 								"id": "848f254d-bafd-4629-9bfd-a16d8505820f",
 								"exec": [
-									"console.log(responseBody)\r",
-									"\r",
 									"pm.test(\"Test body\", function() {\r",
-									"    const responseBody = pm.response.json();\r",
-									"    pm.expect(responseBody.results.type).to.eql(\"Planet\")\r",
+									"    responseBody = pm.response.json();\r",
+									"    pm.expect(responseBody.results.type).to.eql(\"Planet\");\r",
 									"})\r",
 									"\r",
-									""
+									"console.log(responseBody)\r",
+									"\r",
+									"\r",
+									"// testy 'info' - ilość epizodów, 'count', 'pages',\r",
+									"// czy dane 'id' posiada odpowiedni 'status', 'species', etc"
 								],
 								"type": "text/javascript"
 							}
