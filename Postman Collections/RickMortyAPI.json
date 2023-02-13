@@ -215,14 +215,12 @@
 									"    pm.response.to.have.status(200);\r",
 									"})\r",
 									"\r",
-									"//pm.test(\"Characters should not be empty\", function() {\r",
-									"//    const responseBody = pm.response.json();\r",
-									"//    responseBody.map(obiekt => {\r",
-									"//        pm.expect(map.characters).is.not.empty\r",
-									"//    })\r",
-									"//})\r",
+									"pm.test(\"Characters should not be empty\", function() {\r",
+									"    const responseBody = pm.response.json();\r",
+									"        pm.expect(responseBody.results.characters).is.not.empty\r",
+									"})\r",
 									"\r",
-									""
+									"console.log(responseBody.results.characters)"
 								],
 								"type": "text/javascript"
 							}
@@ -235,7 +233,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://rickandmortyapi.com/api/episode/"
+						"url": "https://rickandmortyapi.com/api/episode"
 					},
 					"response": []
 				},
