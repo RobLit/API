@@ -284,6 +284,18 @@
 						"url": "https://rickandmortyapi.com/api/episode/41"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "c1f6a01d-7857-45e8-aaa2-929ab8dbaa4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "9b843142-4526-4eea-9fb1-2b4ecc459b98"
