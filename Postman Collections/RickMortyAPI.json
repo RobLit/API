@@ -293,8 +293,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": "https://rickandmortyapi.com/api/episode/40"
+						"header": []
 					},
 					"response": []
 				}
