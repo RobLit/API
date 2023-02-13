@@ -96,7 +96,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Location is not empty",
 					"id": "e0ee2a2e-41b0-427c-9bb6-49e19d8bb30d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
