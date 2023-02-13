@@ -287,13 +287,36 @@
 				},
 				{
 					"name": "Episode 40",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7136d3a3-47f8-47ef-aa03-63b3a8c0dd75",
+								"exec": [
+									"pm.test(\"Episode should have Rick\", function() {\r",
+									"    response = pm.response.json();\r",
+									"    pm.expect(response.characters).to.include(\"https://rickandmortyapi.com/api/character/1\")\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Episode should not have character\", function() {\r",
+									"    response = pm.response.json();\r",
+									"    pm.expect(response.characters).to.not.include(\"https://rickandmortyapi.com/api/character/85\")\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "c1f6a01d-7857-45e8-aaa2-929ab8dbaa4f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/episode/40"
 					},
 					"response": []
 				}
