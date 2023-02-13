@@ -248,7 +248,7 @@
 								"id": "c2f4088a-127d-4e60-a9c1-0a55d975aa28",
 								"exec": [
 									"const body = pm.response.json();\r",
-									"pm.test(\"Data type should be object\", function() {\r",
+									"pm.test(\"Data type should be an object\", function() {\r",
 									"    pm.expect(body).to.be.an(\"object\");\r",
 									"})\r",
 									"\r",
