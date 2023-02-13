@@ -286,14 +286,15 @@
 					"response": []
 				},
 				{
-					"name": "Episode 120",
+					"name": "Episode 40",
 					"id": "c1f6a01d-7857-45e8-aaa2-929ab8dbaa4f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://rickandmortyapi.com/api/episode/40"
 					},
 					"response": []
 				}
