@@ -97,13 +97,50 @@
 				},
 				{
 					"name": "Character 46",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "40b7f4f0-83a4-48c9-961b-4b3dd2b9c8cf",
+								"exec": [
+									"pm.test(\"Locations shouldnt be empty\", function() {\r",
+									"    response = pm.response.json();\r",
+									"    pm.expect(response.location.name).is.not.empty\r",
+									"})\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "e0ee2a2e-41b0-427c-9bb6-49e19d8bb30d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/46",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								"46"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "Planet",
+									"disabled": true
+								}
+							]
+						}
 					},
 					"response": []
 				}
