@@ -58,7 +58,7 @@
 									"\r",
 									"pm.test(\"Test body\", function() {\r",
 									"    const responseBody = pm.response.json();\r",
-									"    pm.expect(responseBody.type).to.eql(\"Planet\")\r",
+									"    pm.expect(responseBody.results.type).to.eql(\"Planet\")\r",
 									"})\r",
 									"\r",
 									""
