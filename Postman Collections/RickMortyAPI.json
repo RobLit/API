@@ -204,7 +204,7 @@
 			"name": "Episodes",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Episodes",
 					"event": [
 						{
 							"listen": "test",
